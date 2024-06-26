@@ -4,13 +4,13 @@ public class Prueba {
     public static void main(String[] args) {
         try {
             GestorCliente gestorCliente = new GestorCliente();
-            gestorCliente.create("igna","borraz",35249,33);
-            gestorCliente.create("fran","coder",25822,33);
+            gestorCliente.create("Lucas","Perez",27005,38);
+            gestorCliente.create("Fernando","Gomez",14257,36);
             GestorProducto gestorProducto = new GestorProducto();
-            gestorProducto.create("zapatilla",300,10);
-            gestorProducto.create("remeras",500,20);
-            gestorProducto.create("chomba",400,30);
-            gestorProducto.create("gorra",150,20);
+            gestorProducto.create("Pantalones",510,20);
+            gestorProducto.create("Buzos",600,15);
+            gestorProducto.create("Camisas",250,25);
+            gestorProducto.create("Musculozas",260,30);
             Cliente cliente1 = gestorCliente.readById(1);
             Producto producto1 = gestorProducto.readById(1);
             gestorProducto.addToCart(cliente1, producto1);
