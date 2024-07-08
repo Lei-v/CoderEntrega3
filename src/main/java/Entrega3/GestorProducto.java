@@ -3,7 +3,7 @@ package Entrega3;
 
 import jakarta.persistence.*;
 
-        import java.util.List;
+import java.util.List;
 
 public class GestorProducto {
     public void create(String nombre, Integer precio, Integer stock) {
