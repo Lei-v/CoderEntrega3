@@ -6,7 +6,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 
 public class ProductManager  {
-    public void create (String name, Integer Stock, double price)
+    public void create (String name, Integer Stock, double price);
     EntityManager manager = null;
     EntityTransaction transaction;
        try {

@@ -1,8 +1,11 @@
 package Entrega4.entities;
 
+
 import jakarta.persistence.*;
 
 import java.util.Objects;
+
+
 
 //@Table(name = "carts")
 @Entity

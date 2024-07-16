@@ -10,7 +10,7 @@ public class Invoice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private double total;
-    private LocalDateTime create_at:
+    private LocalDateTime create_at;
 
     @ManyToOne
     @JoinColumn(name = "cliente_id")

@@ -5,7 +5,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 
 public class ClientManager  {
-   public void create (String name, Integer docnumer)
+   public void create (String name, Integer docnumer);
        EntityManager manager = null;
        EntityTransaction transaction;
        try {
@@ -17,7 +17,7 @@ public class ClientManager  {
            client.setDocnumber(docnumber);
            manager.persist(client);
 transaction.commit();
-       } catch (Exception e){
+       } catch(Exception e){
 System.out.println(e);
    }  finally {
 manager.closeEntity(manager);
